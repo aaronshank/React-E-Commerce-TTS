@@ -1,0 +1,10 @@
+.text {
+  color: #000;
+  font-weight: bold;
+}
+
+button {
+  height: 1rem;
+  width: 2rem;
+  background-color: #222;
+}
