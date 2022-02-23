@@ -2,15 +2,26 @@ import React from 'react'
 import '../css/product.css'
 import Reviews from './review'
 
+const GENERIC_PRODUCT_NAME = 'Product Name'
+const GENERIC_PRODUCT_DESCRIPTION = 'Product Description'
+const GENERIC_PRODUCT_PRICE = '$29.99'
+const GENERIC_PRODUCT_IMAGE = 'https://www.mountaingoatsoftware.com/uploads/blog/2016-09-06-what-is-a-product.png'
+
 class Product extends React.Component {
-  // constructor( props ) {
-  //   super( props )
-  //   // Product Name
-  //   // Product Description
-  //   // Product Price
-  //   // Product Image
-  //   // Product Reviews
-  // }
+  constructor( props ) {
+    super( props )
+    this.state = {
+      name: GENERIC_PRODUCT_NAME,
+      description: GENERIC_PRODUCT_DESCRIPTION,
+      price: GENERIC_PRODUCT_PRICE,
+      image: GENERIC_PRODUCT_IMAGE
+    }
+    // Product Name
+    // Product Description
+    // Product Price
+    // Product Image
+    // Product Reviews
+  }
 
   render() {
     return (
