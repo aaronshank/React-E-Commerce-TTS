@@ -21,14 +21,14 @@ class Home extends React.Component {
             prodArray.map( ( prod, index ) => {
               if ( index === 0 ) {
                 return (
-                  <div className="carousel-item active data-bs-target">
+                  <div className="carousel-item active">
                     {/* <Link to='/product'><Product name={prod.name} image={prod.imageUrl} alt={prod.imageAlt} /></Link> */}
                     <Link to='/product'><ProductPreview key={index} name={prod.name} imageUrl={prod.imageUrl} imageAlt={prod.imageAlt} /></Link>
                   </div>
                 )
               } else {
                 return (
-                  <div className="carousel-item data-bs-target">
+                  <div className="carousel-item">
                     {/* <Link to='/product'><Product name={prod.name} image={prod.imageUrl} alt={prod.imageAlt} /></Link> */}
                     <Link to='/product'><ProductPreview key={index} name={prod.name} imageUrl={prod.imageUrl} imageAlt={prod.imageAlt} /></Link>
                   </div>
