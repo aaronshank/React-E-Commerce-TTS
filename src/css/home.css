@@ -8,3 +8,11 @@ button {
   width: 2rem;
   background-color: #222;
 }
+
+body {
+  background-color: bisque;
+}
+
+.carousel-item {
+  text-align: center !important;
+}
