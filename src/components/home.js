@@ -21,14 +21,14 @@ class Home extends React.Component {
             prodArray.map( ( prod, index ) => {
               if ( index === 0 ) {
                 return (
-                  <div className="carousel-item active">
+                  <div className="carousel-item active data-bs-target">
                     {/* <Link to='/product'><Product name={prod.name} image={prod.imageUrl} alt={prod.imageAlt} /></Link> */}
                     <Link to='/product'><ProductPreview key={index} name={prod.name} imageUrl={prod.imageUrl} imageAlt={prod.imageAlt} /></Link>
                   </div>
                 )
               } else {
                 return (
-                  <div className="carousel-item ">
+                  <div className="carousel-item data-bs-target">
                     {/* <Link to='/product'><Product name={prod.name} image={prod.imageUrl} alt={prod.imageAlt} /></Link> */}
                     <Link to='/product'><ProductPreview key={index} name={prod.name} imageUrl={prod.imageUrl} imageAlt={prod.imageAlt} /></Link>
                   </div>
@@ -38,6 +38,15 @@ class Home extends React.Component {
           }
         </div>
         <br />
+
+        <button class="carousel-control-prev carousel-control" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          {/* <span class="visually-hidden">Previous</span> */}
+        </button>
+        <button class="carousel-control-next carousel-control" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          {/* <span class="visually-hidden">Next</span> */}
+        </button>
       </div>
     )
   }

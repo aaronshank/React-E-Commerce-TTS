@@ -16,3 +16,10 @@ body {
 .carousel-item {
   text-align: center !important;
 }
+
+.carousel-control {
+  height: auto;
+  width: 100px;
+  margin: 0px 50px;
+  background-color: #333 !important;
+}
