@@ -10,7 +10,7 @@ button {
 }
 
 body {
-  background-color: bisque;
+  background-color: rgb(192, 240, 232);
 }
 
 .carousel-item {
@@ -20,13 +20,13 @@ body {
 .carousel-control {
   height: auto;
   width: 100px;
-  margin: 0px 600px;
+  margin: 0px;
   background-color: #333 !important;
 }
 
 .cust-carousel {
   top: 100px;
-  width: 30%;
+  width: 50%;
   margin: auto;
 }
 
