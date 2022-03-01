@@ -1,29 +1,10 @@
+import { render } from '@testing-library/react'
 import React from 'react'
-import '../css/product.css'
 import Reviews from './review'
 
-const GENERIC_PRODUCT_NAME = 'Product Name'
-const GENERIC_PRODUCT_DESCRIPTION = 'Product Description'
-const GENERIC_PRODUCT_PRICE = '$29.99'
-const GENERIC_PRODUCT_IMAGE = 'https://www.mountaingoatsoftware.com/uploads/blog/2016-09-06-what-is-a-product.png'
-
-class Product extends React.Component {
-  constructor( props ) {
-    super( props )
-    this.state = {
-      name: GENERIC_PRODUCT_NAME,
-      description: GENERIC_PRODUCT_DESCRIPTION,
-      price: GENERIC_PRODUCT_PRICE,
-      image: GENERIC_PRODUCT_IMAGE
-    }
-    // Product Name
-    // Product Description
-    // Product Price
-    // Product Image
-    // Product Reviews
-  }
-
-  productOne = {
+const ProductItem = ( props ) => {
+  
+  let productOne = {
     name: 'Plant Pots',
     description: [
       'Indoor & Outdoor Use: A simple modern aesthetic and clean matte finish planters indoor plants will perfectly match any home or office décor. it can bear extreme temperature environment and is suitable for indoor and outdoor . With better breathabiity and water absorption, it\'s beneficial to the healthy growth of plants.',
@@ -33,29 +14,27 @@ class Product extends React.Component {
       'Perfect shopping experience:We aim to improve planting experience. Guarantee the quality of the product is our responsibility. If you have any questions, please feel free to contact us.'
     ],
     price: '$19.99',
-    image: 'https://m.media-amazon.com/images/I/71smkmbWsgL._AC_SL1500_.jpg',
-    alt: '2 plant pots',
-    isInCart: false
+    image: 'https://m.media-amazon.com/images/I/71smkmbWsgL._AC_SL1500_.jpg'
+
   }
 
-  render() {
-    return (
+  return (
+    <div>
       <div className='product'>
         <h1>PC: {this.productOne.name}</h1>
-        <img src={this.productOne.image} alt={this.productOne.alt} className='plantImage' />
+        <img src={this.productOne.image} alt='2 plant pots' className='plantImage' />
         <h2>PC: {this.productOne.price}</h2>
         {
           this.productOne.description.map( ( indDesc, index ) => {
             return <li key={index}>PC{indDesc}</li>
           } )
         }
-        {/* button to change isInCart -> True */}
         <p hidden>NOTE: Bottom 3 no-show on Home</p>
         <br />
         <Reviews />
       </div>
-    )
-  }
+    </div>
+  )
 }
 
-export default Product
+export default ProductItem
