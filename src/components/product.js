@@ -2,6 +2,7 @@ import React from 'react'
 import '../css/product.css'
 import Reviews from './review'
 import prodArray from './productArray'
+import addtoFavorite from ''
 
 
 class Product extends React.Component {
@@ -26,6 +27,7 @@ class Product extends React.Component {
         }
         {/* component to change isInCart -> True */}
         {/* component to change isFavorite -> True */}
+        {/* <Favorite id={this.state.id} /> */}
         <p hidden>NOTE: Bottom 3 no-show on Home</p>
         <br />
         <Reviews />
@@ -35,3 +37,17 @@ class Product extends React.Component {
 }
 
 export default Product
+
+
+// const Favorite = ( props ) => {
+
+//   onClick() {
+//   // change state -> true / false
+//   }
+
+//   return {
+//     render() {
+//       <button></button>
+//     }
+//   }
+// }

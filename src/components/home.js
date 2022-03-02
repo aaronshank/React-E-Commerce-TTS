@@ -6,7 +6,6 @@ import prodArray from './productArray'
 
 class Home extends React.Component {
 
-
   render() {
     let randomItem = Math.floor( Math.random() * 5 )
     let randomItemObject = prodArray[randomItem]
