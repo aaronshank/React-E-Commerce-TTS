@@ -28,7 +28,7 @@ body {
   top: 100px;
   width: 50%;
   margin: auto;
-  margin-bottom: 100px !important;
+  margin-bottom: 125px !important;
 }
 
 .featured-item {
@@ -39,4 +39,5 @@ body {
 .formatting-div {
   padding-top: 30px;
   padding-bottom: 70px !important;
+  background-image: url('https://graphicdesignjunction.com/wp-content/uploads/2014/05/001+background+pattern+designs.jpg');
 }
