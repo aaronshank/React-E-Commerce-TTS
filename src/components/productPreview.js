@@ -1,13 +1,13 @@
 import React from 'react'
 import '../css/productPreview.css'
+import prodArray from './productArray'
 
 class ProductPreview extends React.Component {
   constructor( props ) {
     super( props )
+    // console.log(props)
     this.state = {
-      name: this.props.name,
-      imageUrl: this.props.imageUrl,
-      imageAlt: this.props.imageAlt
+      id: this.props.id
     }
   }
 
@@ -15,8 +15,8 @@ class ProductPreview extends React.Component {
   render() {
     return (
       <div>
-        <img src={this.state.imageUrl} alt={this.state.imageAlt} className='custImage' />
-        <h1>PC: {this.state.name}</h1>
+        <img src={prodArray[this.state.id].imageUrl} alt={prodArray[this.state.id].imageAlt} className='custImage' />
+        <h1>PC: {prodArray[this.state.id].name}</h1>
       </div>
     )
   }

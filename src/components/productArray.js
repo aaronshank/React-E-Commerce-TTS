@@ -1,5 +1,6 @@
 let productArray = [
   {
+    id: 0,
     name: 'Plant Pots 1',
     description: [
       'Indoor & Outdoor Use: A simple modern aesthetic and clean matte finish planters indoor plants will perfectly match any home or office décor. it can bear extreme temperature environment and is suitable for indoor and outdoor . With better breathabiity and water absorption, it\'s beneficial to the healthy growth of plants.',
@@ -14,6 +15,7 @@ let productArray = [
     isInCart: false
   },
   {
+    id: 1,
     name: 'Plant Pots 2',
     description: [
       'Indoor & Outdoor Use: A simple modern aesthetic and clean matte finish planters indoor plants will perfectly match any home or office décor. it can bear extreme temperature environment and is suitable for indoor and outdoor . With better breathabiity and water absorption, it\'s beneficial to the healthy growth of plants.',
@@ -28,6 +30,7 @@ let productArray = [
     isInCart: false
   },
   {
+    id: 2,
     name: 'Plant Pots 3',
     description: [
       'Indoor & Outdoor Use: A simple modern aesthetic and clean matte finish planters indoor plants will perfectly match any home or office décor. it can bear extreme temperature environment and is suitable for indoor and outdoor . With better breathabiity and water absorption, it\'s beneficial to the healthy growth of plants.',
@@ -42,6 +45,7 @@ let productArray = [
     isInCart: false
   },
   {
+    id: 3,
     name: 'Plant Pots 4',
     description: [
       'Indoor & Outdoor Use: A simple modern aesthetic and clean matte finish planters indoor plants will perfectly match any home or office décor. it can bear extreme temperature environment and is suitable for indoor and outdoor . With better breathabiity and water absorption, it\'s beneficial to the healthy growth of plants.',
@@ -56,6 +60,7 @@ let productArray = [
     isInCart: false
   },
   {
+    id: 4,
     name: 'Plant Pots 5',
     description: [
       'Indoor & Outdoor Use: A simple modern aesthetic and clean matte finish planters indoor plants will perfectly match any home or office décor. it can bear extreme temperature environment and is suitable for indoor and outdoor . With better breathabiity and water absorption, it\'s beneficial to the healthy growth of plants.',

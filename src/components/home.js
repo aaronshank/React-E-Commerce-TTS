@@ -8,13 +8,15 @@ class Home extends React.Component {
 
 
   render() {
-    let randomItem = Math.floor(Math.random() * 5)
-    randomItem = prodArray[randomItem]
+    let randomItem = Math.floor( Math.random() * 5 )
+    let randomItemObject = prodArray[randomItem]
     return (
-      <div>
+      <div className='formatting-div'>
         <div className='featured-item'>
           <h1>Featured Item</h1>
-          <Link to='/product'><ProductPreview name={randomItem.name} imageUrl={randomItem.imageUrl} imageAlt={randomItem.imageAlt} /></Link>
+          <Link to={{ pathname: `/product/${randomItemObject.id}`, state: { randomItemObject } }}>
+            <ProductPreview key={randomItemObject.id.toString()} id={randomItemObject.id} />
+          </Link>
         </div>
         <div id="carouselExampleIndicators" className="carousel slide cust-carousel" data-bs-ride="carousel">
           <div className="carousel-indicators">
@@ -30,15 +32,17 @@ class Home extends React.Component {
                 if ( index === 0 ) {
                   return (
                     <div className="carousel-item active">
-                      {/* <Link to='/product'><Product name={prod.name} image={prod.imageUrl} alt={prod.imageAlt} /></Link> */}
-                      <Link to='/product'><ProductPreview key={index} name={prod.name} imageUrl={prod.imageUrl} imageAlt={prod.imageAlt} /></Link>
+                      <Link to={`/product/${prod.id}`} state={{ id: prod.id }}>
+                        <ProductPreview key={index.toString()} id={prod.id} />
+                      </Link>
                     </div>
                   )
                 } else {
                   return (
                     <div className="carousel-item">
-                      {/* <Link to='/product'><Product name={prod.name} image={prod.imageUrl} alt={prod.imageAlt} /></Link> */}
-                      <Link to='/product'><ProductPreview key={index} name={prod.name} imageUrl={prod.imageUrl} imageAlt={prod.imageAlt} /></Link>
+                      <Link to={{ pathname: `/product/${prod.id}`, state: { prod } }}>
+                        <ProductPreview key={index.toString()} id={prod.id} />
+                      </Link>
                     </div>
                   )
                 }
@@ -47,12 +51,12 @@ class Home extends React.Component {
           </div>
           <br />
 
-          <button class="carousel-control-prev carousel-control" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <button className="carousel-control-prev carousel-control" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
             {/* <span class="visually-hidden">Previous</span> */}
           </button>
-          <button class="carousel-control-next carousel-control" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <button className="carousel-control-next carousel-control" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
             {/* <span class="visually-hidden">Next</span> */}
           </button>
         </div>

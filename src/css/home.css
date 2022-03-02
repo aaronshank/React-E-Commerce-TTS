@@ -28,9 +28,15 @@ body {
   top: 100px;
   width: 50%;
   margin: auto;
+  margin-bottom: 100px !important;
 }
 
 .featured-item {
   text-align: center;
   padding-top: 1%;
+}
+
+.formatting-div {
+  padding-top: 30px;
+  padding-bottom: 70px !important;
 }
