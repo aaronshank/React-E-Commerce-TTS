@@ -7,7 +7,7 @@ import prodArray from './productArray'
 class Product extends React.Component {
   constructor( props ) {
     super( props )
-    console.log(props.toString())
+    // console.log(props.toString())
     this.state = {
       id: this.props.id
     }

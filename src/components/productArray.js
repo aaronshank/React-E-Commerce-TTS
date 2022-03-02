@@ -12,7 +12,8 @@ let productArray = [
     price: '$19.99',
     imageUrl: 'https://m.media-amazon.com/images/I/71smkmbWsgL._AC_SL1500_.jpg',
     imageAlt: '2 plant pots',
-    isInCart: false
+    isInCart: false,
+    isFavorite: false
   },
   {
     id: 1,
@@ -27,7 +28,8 @@ let productArray = [
     price: '$19.99',
     imageUrl: 'https://m.media-amazon.com/images/I/71smkmbWsgL._AC_SL1500_.jpg',
     imageAlt: '2 plant pots',
-    isInCart: false
+    isInCart: false,
+    isFavorite: false
   },
   {
     id: 2,
@@ -42,7 +44,8 @@ let productArray = [
     price: '$19.99',
     imageUrl: 'https://m.media-amazon.com/images/I/71smkmbWsgL._AC_SL1500_.jpg',
     imageAlt: '2 plant pots',
-    isInCart: false
+    isInCart: false,
+    isFavorite: false
   },
   {
     id: 3,
@@ -57,7 +60,8 @@ let productArray = [
     price: '$19.99',
     imageUrl: 'https://m.media-amazon.com/images/I/71smkmbWsgL._AC_SL1500_.jpg',
     imageAlt: '2 plant pots',
-    isInCart: false
+    isInCart: false,
+    isFavorite: false
   },
   {
     id: 4,
@@ -72,7 +76,8 @@ let productArray = [
     price: '$19.99',
     imageUrl: 'https://m.media-amazon.com/images/I/71smkmbWsgL._AC_SL1500_.jpg',
     imageAlt: '2 plant pots',
-    isInCart: false
+    isInCart: false,
+    isFavorite: false
   }
 ]
 
