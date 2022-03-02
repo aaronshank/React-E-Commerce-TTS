@@ -2,7 +2,7 @@ import React from 'react'
 import '../css/product.css'
 import Reviews from './review'
 import prodArray from './productArray'
-import addtoFavorite from ''
+// import addtoFavorite from ''
 
 
 class Product extends React.Component {
