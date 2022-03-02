@@ -15,7 +15,7 @@ class Home extends React.Component {
         <div className='featured-item'>
           <h1>Featured Item</h1>
           <Link to={{ pathname: `/product/${randomItemObject.id}`, state: { randomItemObject } }}>
-            <ProductPreview key={randomItemObject.id.toString()} id={randomItemObject.id} />
+            <ProductPreview key={randomItemObject.id} id={randomItemObject.id} />
           </Link>
         </div>
         <div id="carouselExampleIndicators" className="carousel slide cust-carousel" data-bs-ride="carousel">
@@ -33,7 +33,7 @@ class Home extends React.Component {
                   return (
                     <div className="carousel-item active">
                       <Link to={`/product/${prod.id}`} state={{ id: prod.id }}>
-                        <ProductPreview key={index.toString()} id={prod.id} />
+                        <ProductPreview key={index} id={prod.id} />
                       </Link>
                     </div>
                   )
@@ -41,7 +41,7 @@ class Home extends React.Component {
                   return (
                     <div className="carousel-item">
                       <Link to={{ pathname: `/product/${prod.id}`, state: { prod } }}>
-                        <ProductPreview key={index.toString()} id={prod.id} />
+                        <ProductPreview key={index} id={prod.id} />
                       </Link>
                     </div>
                   )

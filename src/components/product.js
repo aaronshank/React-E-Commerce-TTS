@@ -24,8 +24,8 @@ class Product extends React.Component {
             return <li>PC{indDesc}</li>
           } )
         }
-        {/* button to change isInCart -> True */}
-        {/* button to change isFavorite -> True */}
+        {/* component to change isInCart -> True */}
+        {/* component to change isFavorite -> True */}
         <p hidden>NOTE: Bottom 3 no-show on Home</p>
         <br />
         <Reviews />
