@@ -13,21 +13,19 @@ class Product extends React.Component {
     }
   }
 
-
-
   render() {
     return (
       <div className='product'>
         <h1>PC: {prodArray[this.state.id].name}</h1>
         <img src={prodArray[this.state.id].imageUrl} alt={prodArray[this.state.id].imageAlt} className='plantImage' />
         <h2>PC: {prodArray[this.state.id].price}</h2>
-        {/* {
-          this.state.product.description.map( ( indDesc ) => {
+        {
+          prodArray[this.state.id].description.map( ( indDesc ) => {
             return <li>PC{indDesc}</li>
           } )
-        } */}
-        <p>PC: {prodArray[this.state.id].description}</p>
+        }
         {/* button to change isInCart -> True */}
+        {/* button to change isFavorite -> True */}
         <p hidden>NOTE: Bottom 3 no-show on Home</p>
         <br />
         <Reviews />

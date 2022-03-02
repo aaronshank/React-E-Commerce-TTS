@@ -11,7 +11,6 @@ class ProductPreview extends React.Component {
     }
   }
 
-
   render() {
     return (
       <div>
