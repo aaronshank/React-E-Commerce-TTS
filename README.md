@@ -1,6 +1,22 @@
 # Tech Talent South
 
 ## React Group Project
+### Setting Up
+* `npm install`
+* `npm install react-router-dom`
+* `npm install react-icons`
+
+### Running project
+* `npm start`
+
+## What I Learned :
+* React Router.
+* Bootstrap with React.
+* Combing use of class and functional React components.
+* Reusability with components.
+* Utilizing a .js file to imitate a back-end / database / API calls for testing purposes.
+* Collaboration with a group to complete components that will interact with everyone's.
+
 
 ### Project Requirements
 * Initializing Repository, Readme.md
