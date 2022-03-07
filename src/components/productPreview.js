@@ -15,7 +15,7 @@ class ProductPreview extends React.Component {
     return (
       <div>
         <img src={prodArray[this.state.id].imageUrl} alt={prodArray[this.state.id].imageAlt} className='custImage' />
-        <h1>PC: {prodArray[this.state.id].name}</h1>
+        <h1>{prodArray[this.state.id].name}</h1>
       </div>
     )
   }
