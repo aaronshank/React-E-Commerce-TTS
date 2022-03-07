@@ -18,7 +18,7 @@
 * Collaboration with a group to complete components that will interact with everyone's.
 
 
-### Project Requirements
+## Project Requirements
 * Initializing Repository, Readme.md
 * Create wireframe in something like draw.io to get a concept of what the group wants to create
 * Use props
