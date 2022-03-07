@@ -1,6 +1,6 @@
 import React from "react"
 import { FaStar } from "react-icons/fa" //have to npm install react-icons
-import { Favorites } from "./favorites"
+// import { Favorites } from "./favorites"
 import "../css/favoriteStar.css"
 import prodArray from './productArray'
 

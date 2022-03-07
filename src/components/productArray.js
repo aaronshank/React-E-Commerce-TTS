@@ -29,51 +29,46 @@ let productArray = [
   },
   {
     id: 2,
-    name: 'Plant Pots 3',
+    name: 'Anker Power Strip',
     description: [
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
+      'One for All: 3 AC outlets and 3 USB ports power everything on your desk from a single compact hub (18W max output from the USB ports and 1250W from the AC outlets).',
+      'High-Speed Charging: Deliver an optimized charge to USB devices with Anker\'s world-renowned PowerIQ technology.',
+      'Compact and Portable: Less than 2 ½ cubic inches, for maximum space-saving at home or in your travel bag.',
+      'Superior Safety: Overload protection and a fire-retardant casing ensure complete protection for you and your devices.',
+      'What You Get: PowerPort Cube, adhesive strip, welcome guide, worry-free 18-month warranty, lifetime* $25,000 connected equipment warranty, and friendly customer service.',
+      '*For the purpose of this connected equipment warranty, "lifetime" is defined as the lifetime of the product.',
     ],
     price: 19.99,
-    imageUrl: 'https://m.media-amazon.com/images/I/71smkmbWsgL._AC_SL1500_.jpg',
-    imageAlt: '2 plant pots'
+    imageUrl: 'https://m.media-amazon.com/images/I/614CkxmmyaL._AC_SL1500_.jpg',
+    imageAlt: 'The anker power strip showing 3 USB-A and 2 AC outlets'
   },
   {
     id: 3,
-    name: 'Plant Pots 4',
+    name: 'DoubleJun Floor Mat',
     description: [
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
+      'Dimension: 29.5"(W) X 17.7"(L). One-Side Printing,using heat dye sublimation technique, long-lasting effects.Super soft and excellent hand feeling.',
+      'Material: High quality Felt and Rubber. Non-slip backing( Made with Quality RUBBER). Easy to clean dirt and machine washable, also simply shake the mat, the dirt will go off. Regardless of the use of anywhere can be effective to avoid slipping.',
+      'Designed For Indoors / Outdoors Use: Durable heat-resistant non-woven fabric top.Backed with a neoprene rubber non-slip backing. Anti slip & durable - Rubber back provides maximum grip to prevent the mat from skidding. Dry wet feet, grab dirt, dust and grime,clean your house, relax yourself. Our design images funny, fashion and unique, we believe you will receive many compliments when you get it.',
+      'A Great Gift Ideal: This beautiful doormat is an excellent addition to any home.You can personalized your own doormat by sending us image. It\'s really a great and simple mat for your indoor and outdoor use. It will be one of the best gift option for any occasions.',
+      'Customer Service: If it doesn\'t meet your expectations, we provide replacement or refund. We are confident of the quality of our doormat. Any questions, please don\'t hesitate to contact us,we reply any email within 24 hours. We supply the best service for you! Daily Use Party Use Gift Choice For Christmas/New Year/ Birthday/Valentine\'s day or any Holidays and Festivals.',
     ],
-    price: 19.99,
-    imageUrl: 'https://m.media-amazon.com/images/I/71smkmbWsgL._AC_SL1500_.jpg',
-    imageAlt: '2 plant pots'
+    price: 31.01,
+    imageUrl: 'https://m.media-amazon.com/images/I/71kBlvtgfhL._AC_SL1200_.jpg',
+    imageAlt: 'Floor mat that says "Speak Friend and Enter"'
   },
   {
     id: 4,
-    name: 'Plant Pots 5',
+    name: 'Papuka Pure Brass Fidget Toy',
     description: [
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
+      'NEWEST STYLE -- The most unique fidget toy ever, Gears Linkage Design, made of pure brass, high quality, full of mechanical sense,1-3 minute average spins great for fidgety hands,relieve stress.(The actual spin time will be affected by age and strength of users)',
+      'HELPFUL -- Perfect for waiting in lines, meditation, timing, quitting bad habits, striking up conversations, and more. Increases Focus and Attention for Children.',
+      'KILLER OF STRESS -- Great for releasing anxiety, relaxing, staying awake, ADHD, ADD, autism and other attention disorder issues. Helps you calm down while stressful, kill you time while you are boring.',
+      'NO BIG NOISE -- Easy to carry, small, simple, discrete and fun, also effective for focus and deep thought with using this hand spinner',
+      'Perfect Gift Choice -- Xmas Gift for Kids & Adults,Not only a toys but also a pressure release. The best choice for kids Birthday gift stocking stuffers or Christmas gift.',
     ],
     price: 19.99,
-    imageUrl: 'https://m.media-amazon.com/images/I/71smkmbWsgL._AC_SL1500_.jpg',
-    imageAlt: '2 plant pots'
+    imageUrl: 'https://m.media-amazon.com/images/I/61zOnrzWB1L._AC_SL1000_.jpg',
+    imageAlt: 'Brass fidget toy'
   }
 ]
 

@@ -1,8 +1,8 @@
-import React, { createRef, useState } from "react"
+import React from "react"
 import { Component } from "react"
 import '../css/productBoard.css'
 import prodArray from './productArray'
-import { Favorites } from './favorites'
+// import { Favorites } from './favorites'
 import Reviews from "./reviews"
 
 class ProductBoard extends Component {

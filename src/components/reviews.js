@@ -8,7 +8,7 @@ const GENERIC_NOTE_Body = "Rip it to  shreds"
 
 function StarRating( { savedReview } ) {
   const [rating, setRating] = useState( 0 )
-  const [hover, setHover] = useState( 0 )
+  const [hover] = useState( 0 )
   const [showStars, setStars] = useState( false )
   return (
     <div className="star-rating">

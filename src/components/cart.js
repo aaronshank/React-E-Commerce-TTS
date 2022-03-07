@@ -70,7 +70,7 @@ class Cart extends Component {
                   <div>
                     Total:{" $"}
                     {(
-                      cartItems.reduce( ( a, c ) => a + c.price * c.count, 0 )
+                      cartItems.reduce( ( a, c ) => a + c.price * c.count, 0 ).toFixed(2)
                     )}
                   </div>
                   <button
