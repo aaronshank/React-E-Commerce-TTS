@@ -172,45 +172,37 @@ class Reviews extends Component {
           </div>
           <div className="row">
             <div>
-
               {avatarImage}
               <div className="reviews">
                 {this.state.savedReview.map( ( savedReview, index ) => (
-
                   <IsDisplayed savedReview={savedReview} key={index} />
                 ) )}
               </div>
             </div>
           </div>
-
           <div className="card-body">
-
             <div className="review-title">{titleArea}</div>
             <div>{avatarArea}</div>
             <div>{bodyArea}</div>
             <div>{starRating}</div>
             <div>{buttonArea}</div>
             <div className>
-
               <button type="submit" className="btn btn-success" onClick={this.handleReview.bind( this )}>Leave a review</button>
             </div>
-
           </div>
         </div>
-
       </div>
-
     )
-
   }
-
-
 }
+
 Reviews.defaultProps = {
   title: "Leave a review",
   body: "\"Rip this to pieces \""
 }
+
 Reviews.propTypes = {
   title: PropTypes.string
 }
+
 export default Reviews
