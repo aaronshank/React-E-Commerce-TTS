@@ -30,7 +30,8 @@
 * Responsiveness 
 * Unique and readable design - Be Creative!
 * Understand the project enough to be able to present it
-**E-Commerce:**
+
+### E-Commerce:
 * Must have at least 5 different products
 * Each product should have a different title, description, and price
 * The ability to click on a product to view details only for that one product
