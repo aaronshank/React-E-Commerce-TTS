@@ -3,7 +3,7 @@
   font-weight: bold;
 }
 
-button {
+.homeButton {
   height: 1rem;
   width: 2rem;
   background-color: #222;

@@ -18,4 +18,4 @@
 **E-Commerce:**
 * Must have at least 5 different products
 * Each product should have a different title, description, and price
-* The ability to click on a product to view details only for that one product 
+* The ability to click on a product to view details only for that one product

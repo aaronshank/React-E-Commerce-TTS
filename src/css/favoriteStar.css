@@ -1,0 +1,24 @@
+/* Hides the radio button to select the star - looks nicer  */
+[type = "radio"] {
+  display: none;
+}
+
+/* When you hover over the star the mouse changes to a pointer to indicate it is selectable  */
+.star {
+  cursor: pointer;
+}
+
+/* Resizes the product image to not take up the whole screen - may be superfluous once combined  */
+.product-image {
+  height: 200px;
+  width: 200px;
+}
+
+.favImage {
+  height: 500px;
+  width: 500px;
+}
+
+.desc {
+  text-align: left;
+}

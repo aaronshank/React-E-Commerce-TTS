@@ -1,53 +1,46 @@
-import React from 'react'
-import '../css/product.css'
-import Reviews from './review'
+import React, { createRef, useState } from "react"
+import { Component } from "react"
+import '../css/productBoard.css'
 import prodArray from './productArray'
-// import addtoFavorite from ''
+import { Favorites } from './favorites'
+import Reviews from "./reviews"
 
-
-class Product extends React.Component {
+class ProductBoard extends Component {
   constructor( props ) {
     super( props )
-    // console.log(props.toString())
     this.state = {
       id: this.props.id
     }
   }
-
   render() {
     return (
-      <div className='product'>
-        <h1>PC: {prodArray[this.state.id].name}</h1>
-        <img src={prodArray[this.state.id].imageUrl} alt={prodArray[this.state.id].imageAlt} className='plantImage' />
-        <h2>PC: {prodArray[this.state.id].price}</h2>
-        {
-          prodArray[this.state.id].description.map( ( indDesc ) => {
-            return <li>PC{indDesc}</li>
-          } )
-        }
-        {/* component to change isInCart -> True */}
-        {/* component to change isFavorite -> True */}
-        {/* <Favorite id={this.state.id} /> */}
-        <p hidden>NOTE: Bottom 3 no-show on Home</p>
-        <br />
-        <Reviews />
+      <div className="container productContainer">
+        <div className="centerImage">
+          <div className="image-container">
+            <img className='productImage' src={prodArray[this.state.id].imageUrl} height='200' widith="100" alt={prodArray[this.state.id].imageAlt}></img>
+          </div>
+          <h1 className="product-title">{prodArray[this.state.id].name}</h1>
+        </div>
+        <div className="information-container">
+          <div className="list">Some Specs:</div>
+          <div className="specs">
+            <ul>
+              <li>Price: ${prodArray[this.state.id].price} </li>
+              <li>Manufacturer: Money inc. </li>
+              {
+                prodArray[this.state.id].description.map( ( indDesc ) => {
+                  return <li>{indDesc}</li>
+                } )
+              }
+            </ul>
+          </div>
+        </div>
+        <div className="review-container" height="500" width="400">
+          {/* <Favorites /> */}
+          <Reviews />
+        </div>
       </div>
     )
   }
 }
-
-export default Product
-
-
-// const Favorite = ( props ) => {
-
-//   onClick() {
-//   // change state -> true / false
-//   }
-
-//   return {
-//     render() {
-//       <button></button>
-//     }
-//   }
-// }
+export default ProductBoard;

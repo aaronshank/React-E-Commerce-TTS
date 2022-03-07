@@ -4,6 +4,8 @@ import Navbar from './navbar'
 import Home from './home'
 import Footer from './footer'
 import Product from './product'
+import Checkout from './checkout'
+import { Favorites } from './favorites'
 
 class MyRoutes extends React.Component {
   render() {
@@ -19,6 +21,8 @@ class MyRoutes extends React.Component {
             <Route path='/product/2' element={<Product id={2}/>} />
             <Route path='/product/3' element={<Product id={3}/>} />
             <Route path='/product/4' element={<Product id={4}/>} />
+            <Route path='/cart' element={<Checkout />} />
+            <Route path='/favorite' element={<Favorites />} />
           </Routes>
           <Footer />
         </div>
